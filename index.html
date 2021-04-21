@@ -1,15 +1,54 @@
-<!DOCTYPE html>
-<html>
-<body>
+<div class="section">
 
-<h1 style="background-color:red;"><b>Athula onum ila Keela potru</b></h1>
-<hr>
+  <h1>Ethula onum ila Keela potru</h1>
 
-<video width="600" height="300" controls autoplay>
-  <source src="onnum.mp4.mp4" type="video/mp4">
-  <source src="onnum.mp4.mp4" type="video/ogg">
-  
-</video>
+  <div class="video-container">
+      <div class="color-overlay"></div>
+      <video autoplay loop >
+          <source src="onnum.mp4.mp4" type="video/mp4">
+      </video>
+  </div>
 
-</body>
-</html>
+</div>
+<div style="height:400px;width:100%">
+  <h2><b>Edu Yaru madathaum pun paduthuvathuku ella</b></h2>
+</div>
+
+<style>
+.section {
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.section h1 {
+text-align: center;
+font-size: 6rem;
+font-family: "Cookie";
+padding: 20px;
+margin: 15px;
+z-index: 1;
+opacity: 0.7;
+}
+
+.video-container {
+
+top: 0;
+left: 0;
+width: 0%;
+}
+
+.color-overlay {
+position: absolute;
+top: 0;
+left: 0;
+background-color: lightblue;
+width: 100%;
+height: 100vh;
+opacity: 0.5;
+}
+</style>
